@@ -1,21 +1,29 @@
 #include<stdio.h>
-int main() {
+main()
+{
     int babyCount = 0, schoolCount = 0, adultCount = 0;
     int count = 0;
     int age;
     printf("Enter the age of 20 persons:\n");
-    while (count < 20) {
+    while (count < 20)
+    {
         printf("Person %d: ", count + 1);
         scanf("%d", &age);
-        if (age <= 0) {
+        if (age <= 0)
+        {
             printf("Invalid age! Please enter a positive value.\n");
             continue;
         }
-        if (age < 3) {
+        if (age < 3)
+        {
             babyCount++;
-        } else if (age >= 3 && age <= 17) {
+        }
+        else if (age >= 3 && age <= 17)
+        {
             schoolCount++;
-        } else {
+        }
+        else
+        {
             adultCount++;
         }
         count++;
